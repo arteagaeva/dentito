@@ -1,0 +1,27 @@
+{
+  "name": "automatizacion_cyprees",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "author": "Eva",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^13.9.0"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.5",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
+    "esbuild": "^0.21.1"
+  },
+  "cypress-cucumber-preprocessor":{
+    "stepDefinitions":[
+    "cypress/e2e/step-definitions/*.{js,ts}"
+    ]
+}
+}
+
+
+
