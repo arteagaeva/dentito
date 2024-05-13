@@ -2,7 +2,9 @@ class loginPage{
     elements={
         username: () => cy.get("#input-27"),
         password: () => cy.get("#input-28"),
-        btnLogin: () => cy.get(".btn_block_style1")
+        btnLogin: () => cy.get(".btn_block_style1"),
+        btnmanager: () => cy.get('.v-list-group__header > .v-list-item__content'),
+        btntgestióndelicencias: () => cy.get(':nth-child(2) > .v-list-item > .v-list-item__title')
     }
         
     whiterUser(user) {
@@ -14,6 +16,14 @@ class loginPage{
 
     clickLogin(){
         this.elements.btnLogin().click()
+    }
+
+    clickmanager(){
+        this.elements.btnmanager().click()
+    }
+
+    clickgestióndelicencias(){
+        this.elements.btntgestióndelicencias().click()
     }
 
 }

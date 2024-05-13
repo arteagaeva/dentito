@@ -17,3 +17,13 @@ When("the user enters the password {string}",(password) => {
 When("clicks the {string} button",()=>{
     loginPage.clickLogin()
 })
+
+When("clicks in manager",()=>{
+    loginPage.clickmanager()
+})
+
+When("clicks in gestióndelicencias",()=>{
+    loginPage.clickgestióndelicencias()
+})
+
+
